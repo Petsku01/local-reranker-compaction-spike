@@ -1,7 +1,7 @@
 {
   "summary": {
     "model": "Qwen/Qwen3-Reranker-0.6B",
-    "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "device": "CUDA GPU (12 GB class, consumer laptop)",
     "cases": 17,
     "load_seconds": 28.186610112999915,
     "local_scenario_seconds": [

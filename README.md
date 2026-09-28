@@ -1,6 +1,6 @@
 # Local Reranker for Compaction — Feasibility Spike
 
-**Date:** 2026-09-24 (runs) · **Host:** consumer laptop (Ryzen AI 9 HX 370, 93 GiB RAM, RTX 5070 Laptop 12 GB)
+**Date:** 2026-09-24 (runs) · **Host:** consumer laptop GPU, 12 GB VRAM (exact model irrelevant to the findings)
 **Question:** can a small local cross-encoder replace an external scoring API for context-compaction evidence ranking?
 
 Public research artifact from a weekend spike. The production system's compaction engine
