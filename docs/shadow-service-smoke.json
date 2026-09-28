@@ -1,0 +1,12 @@
+{
+  "tested_at": "2026-09-24T23:37:19+03:00",
+  "model": "Qwen/Qwen3-Reranker-0.6B",
+  "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473",
+  "redaction_ok": true,
+  "raw_log_private": true,
+  "long_result_tokens_approx": 19843,
+  "chunk_count": 5,
+  "max_chunk_index": 4,
+  "tail_score": 0.679178699175393,
+  "verdict": "PASS"
+}

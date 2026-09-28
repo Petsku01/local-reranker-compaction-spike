@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "semif": {
+    "repository": "https://github.com/TheoLeeCJ/SemIf",
+    "commit": "23cf1f39fc9534fe81437200959b6dfc7106e45a",
+    "wheel": "semif_phase1-0.1.0-py3-none-any.whl",
+    "wheel_sha256": "9094801aab8c3a8b0d4ff07ca873c87ea8453cd3241cec70712e13d8cbb38827"
+  },
+  "model": {
+    "repository": "Qwen/Qwen3.5-4B",
+    "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "dtype": "bfloat16",
+    "offline": true
+  },
+  "runtime": {
+    "python": "3.11",
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "accelerate": "1.12.0",
+    "cuda_toolkit": "13.0.3.0",
+    "decision_batch_size": 4,
+    "max_input_tokens": 6000
+  },
+  "verification": {
+    "authored144_coverage": 1.0,
+    "authored144_mean_family_balanced_accuracy": 0.8132381607613807,
+    "upstream_argmax_flips": 0,
+    "worst_case_questions": 32,
+    "worst_case_seconds": 16.994,
+    "worst_case_cuda_peak_mib": 9403.5
+  }
+}

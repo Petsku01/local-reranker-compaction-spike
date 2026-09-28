@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "model": "Qwen/Qwen3-Reranker-0.6B",
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "cases": 17,
+    "load_seconds": 4.067648158999873,
+    "local_scenario_seconds": [
+      2.1340901690000464,
+      0.04061972399995284,
+      0.0385687970001527
+    ],
+    "jev_scenario_seconds": [
+      0.7600760150007773,
+      0.6498569380000845,
+      0.6391593869993812
+    ],
+    "local_accuracy_at_0.5": 0.5294117647058824,
+    "local_calibrated_threshold": 0.00018504361456113692,
+    "local_calibrated_accuracy": 1.0,
+    "local_auc": 1.0,
+    "local_min_relevant": 0.0002611903190957194,
+    "local_max_irrelevant": 0.00010889691002655443,
+    "jev_accuracy_at_0.6": 1.0,
+    "local_vs_jev_spearman": 0.7433881343900304,
+    "local_vs_jev_decision_agreement_at_calibrated_threshold": 1.0,
+    "cuda_peak_allocated_bytes": 1347751936,
+    "cuda_peak_reserved_bytes": 1354760192
+  },
+  "rows": [
+    {
+      "task": "Investigate why the PostgreSQL backup cron fails with permission denied and fix it without losing existing archives.",
+      "id": "backup_error",
+      "text": "Current cron error: PermissionError: [Errno 13] opening /srv/backups/db.dump",
+      "expected": 1,
+      "local_raw": 1.75,
+      "local_sigmoid": 0.8519528019683106,
+      "jev_noul": 0.89
+    },
+    {
+      "task": "Investigate why the PostgreSQL backup cron fails with permission denied and fix it without losing existing archives.",
+      "id": "backup_permissions",
+      "text": "ls -ld /srv/backups => drwx------ root root /srv/backups",
+      "expected": 1,
+      "local_raw": -2.0,
+      "local_sigmoid": 0.11920292202211755,
+      "jev_noul": 0.9
+    },
+    {
+      "task": "Investigate why the PostgreSQL backup cron fails with permission denied and fix it without losing existing archives.",
+      "id": "backup_verified",
+      "text": "Fresh backup completed; archive checksum verified and restore listing succeeded.",
+      "expected": 1,
+      "local_raw": -4.3125,
+      "local_sigmoid": 0.013222821752305148,
+      "jev_noul": 0.73
+    },
+    {
+      "task": "Investigate why the PostgreSQL backup cron fails with permission denied and fix it without losing existing archives.",
+      "id": "backup_constraint_fi",
+      "text": "Käyttäjän rajoite: olemassa olevia varmuuskopioarkistoja ei saa poistaa.",
+      "expected": 1,
+      "local_raw": -2.375,
+      "local_sigmoid": 0.08509904500702024,
+      "jev_noul": 0.9
+    },
+    {
+      "task": "Investigate why the PostgreSQL backup cron fails with permission denied and fix it without losing existing archives.",
+      "id": "weather",
+      "text": "Turun sää: 12 C, heikkoa sadetta.",
+      "expected": 0,
+      "local_raw": -12.75,
+      "local_sigmoid": 2.902311985211097e-06,
+      "jev_noul": 0.11
+    },
+    {
+      "task": "Investigate why the PostgreSQL backup cron fails with permission denied and fix it without losing existing archives.",
+      "id": "npm_output",
+      "text": "npm install completed: added 418 packages and audited 419 packages.",
+      "expected": 0,
+      "local_raw": -9.125,
+      "local_sigmoid": 0.00010889691002655443,
+      "jev_noul": 0.2
+    },
+    {
+      "task": "Fix the Python API returning HTTP 500 when email is null and add a regression test without changing the database schema.",
+      "id": "stack_trace",
+      "text": "Traceback: normalize_email calls email.lower(); AttributeError: 'NoneType' object has no attribute 'lower'.",
+      "expected": 1,
+      "local_raw": -5.6875,
+      "local_sigmoid": 0.0033766123817395013,
+      "jev_noul": 0.74
+    },
+    {
+      "task": "Fix the Python API returning HTTP 500 when email is null and add a regression test without changing the database schema.",
+      "id": "source_bug",
+      "text": "def normalize_email(email): return email.strip().lower()",
+      "expected": 1,
+      "local_raw": -7.3125,
+      "local_sigmoid": 0.0006667023092435894,
+      "jev_noul": 0.81
+    },
+    {
+      "task": "Fix the Python API returning HTTP 500 when email is null and add a regression test without changing the database schema.",
+      "id": "test_verified",
+      "text": "Regression test test_null_email_returns_422 passed; targeted suite: 12 passed.",
+      "expected": 1,
+      "local_raw": 5.6875,
+      "local_sigmoid": 0.9966233876182606,
+      "jev_noul": 0.79
+    },
+    {
+      "task": "Fix the Python API returning HTTP 500 when email is null and add a regression test without changing the database schema.",
+      "id": "schema_constraint",
+      "text": "User decision: do not add a database migration for this fix.",
+      "expected": 1,
+      "local_raw": 1.125,
+      "local_sigmoid": 0.7549149868676283,
+      "jev_noul": 0.81
+    },
+    {
+      "task": "Fix the Python API returning HTTP 500 when email is null and add a regression test without changing the database schema.",
+      "id": "css_diff",
+      "text": "Changed .hero-title font-size from 42px to 40px on mobile.",
+      "expected": 0,
+      "local_raw": -11.8125,
+      "local_sigmoid": 7.411279871974134e-06,
+      "jev_noul": 0.22
+    },
+    {
+      "task": "Fix the Python API returning HTTP 500 when email is null and add a regression test without changing the database schema.",
+      "id": "old_git_status",
+      "text": "git status from another repository: README.md modified.",
+      "expected": 0,
+      "local_raw": -9.5,
+      "local_sigmoid": 7.484622751061124e-05,
+      "jev_noul": 0.21
+    },
+    {
+      "task": "Find why the Samsung Odyssey G9 wallpaper is blurry and improve it without changing display resolution until the user approves.",
+      "id": "display_mode",
+      "text": "DP-2 primary mode is 3840x1080@120 Hz with scale 1.25; 5120x1440@60 is also advertised.",
+      "expected": 1,
+      "local_raw": -8.25,
+      "local_sigmoid": 0.0002611903190957194,
+      "jev_noul": 0.86
+    },
+    {
+      "task": "Find why the Samsung Odyssey G9 wallpaper is blurry and improve it without changing display resolution until the user approves.",
+      "id": "wallpaper_size",
+      "text": "Current wallpaper file dimensions: 1920x1080 pixels, JPEG quality 72.",
+      "expected": 1,
+      "local_raw": -1.3125,
+      "local_sigmoid": 0.21206880435710532,
+      "jev_noul": 0.9
+    },
+    {
+      "task": "Find why the Samsung Odyssey G9 wallpaper is blurry and improve it without changing display resolution until the user approves.",
+      "id": "stop_constraint_fi",
+      "text": "Käyttäjä sanoi: pysähdy. Näyttöasetuksia ei saa muuttaa ennen uutta lupaa.",
+      "expected": 1,
+      "local_raw": -4.5625,
+      "local_sigmoid": 0.010328152519305191,
+      "jev_noul": 0.89
+    },
+    {
+      "task": "Find why the Samsung Odyssey G9 wallpaper is blurry and improve it without changing display resolution until the user approves.",
+      "id": "network_ping",
+      "text": "ping 1.1.1.1: 12 ms, 0% packet loss.",
+      "expected": 0,
+      "local_raw": -9.5,
+      "local_sigmoid": 7.484622751061124e-05,
+      "jev_noul": 0.24
+    },
+    {
+      "task": "Find why the Samsung Odyssey G9 wallpaper is blurry and improve it without changing display resolution until the user approves.",
+      "id": "discord_log",
+      "text": "Discord gateway connected as Kuu#2777.",
+      "expected": 0,
+      "local_raw": -11.125,
+      "local_sigmoid": 1.473898197449493e-05,
+      "jev_noul": 0.23
+    }
+  ]
+}

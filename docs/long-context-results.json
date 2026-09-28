@@ -1,0 +1,40 @@
+{
+  "elapsed_seconds": 1.9816472660004365,
+  "rows": [
+    {
+      "name": "short_relevant",
+      "characters": 94,
+      "full_tokens": 41,
+      "raw": -0.5,
+      "sigmoid": 0.37754066879814546
+    },
+    {
+      "name": "long_fact_at_start",
+      "characters": 140495,
+      "full_tokens": 19843,
+      "raw": 0.625,
+      "sigmoid": 0.6513548646660542
+    },
+    {
+      "name": "long_fact_at_end",
+      "characters": 140495,
+      "full_tokens": 19843,
+      "raw": -3.625,
+      "sigmoid": 0.02595735719779685
+    },
+    {
+      "name": "long_irrelevant",
+      "characters": 140400,
+      "full_tokens": 19825,
+      "raw": -3.625,
+      "sigmoid": 0.02595735719779685
+    },
+    {
+      "name": "head_tail_fact_at_end",
+      "characters": 12026,
+      "full_tokens": 1731,
+      "raw": 3.125,
+      "sigmoid": 0.9579122720843811
+    }
+  ]
+}
